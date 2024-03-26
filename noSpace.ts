@@ -6,3 +6,8 @@
 export function noSpace(x:string):string {
     return [...x].filter(e=>e!==' ').join('')
   }
+
+//   x.replace(/\s/g, '');
+//   x.split(' ').join('');
+//   x.replaceAll(' ', '');
+//   x.replace(/ /g , "");
