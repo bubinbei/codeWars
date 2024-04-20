@@ -1,0 +1,1 @@
+const XO = str => ![...str.toLowerCase()].reduce((acc,el)=>el==='x'&&acc+1||el==='o'&&acc-1,0)
