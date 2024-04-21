@@ -1,0 +1,1 @@
+const isTriangle = (a,b,c)=> [a,b,c].map(e=>Math.abs(e)).sort((a,b)=>b-a).some((e,i,a)=>(a[2]+a[1])>a[0])
