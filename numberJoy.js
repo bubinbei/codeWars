@@ -6,4 +6,4 @@
 // reversing s = 91
 // and 19 * 91 = 1729 --> the number that we started with.
 
-const numberJoy = (n) => [...''+[...""+n].reduce((a,e)=>a+Number(e),0)].reverse().join('')*[...""+n].reduce((a,e)=>a+Number(e),0)===n
+export const numberJoy = (n) => [...''+[...""+n].reduce((a,e)=>a+Number(e),0)].reverse().join('')*[...""+n].reduce((a,e)=>a+Number(e),0)===n

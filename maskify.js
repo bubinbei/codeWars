@@ -1,0 +1,1 @@
+const maskify = (cc) => [...cc].reverse().map((el,i)=>i>3?"#":el).reverse().join('')
