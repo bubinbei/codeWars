@@ -7,7 +7,7 @@
 
 // ('+', 4, 7) --> 11
 
-function basicOp(operation, value1, value2){
+export function basicOp(operation, value1, value2){
     if(operation == '+') return  value1 + value2
     if(operation == '-') return  value1 - value2
     if(operation == '*') return  value1 * value2
