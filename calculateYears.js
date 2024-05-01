@@ -2,7 +2,7 @@
 //     The sum is kept for 'Y' years in the bank where interest 'I' is paid yearly. After paying taxes 'T' for the year the new sum is re-invested.
 //     Note to Tax: not the invested principal is taxed, but only the year's accrued interest
 // Example:
-    function calculateYears(principal, interest, tax, desired) {
+   export function calculateYears(principal, interest, tax, desired) {
     let a
     let sum = principal
     let b=0
@@ -12,4 +12,3 @@
     }
     return Math.ceil(b)
 }
-console.log(calculateYears(1000,0.01625,0.18,1200))
