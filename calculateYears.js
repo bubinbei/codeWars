@@ -9,6 +9,7 @@
     for(;sum < desired;sum= sum + a){
         a = (sum*interest)-(sum*interest*tax)
         b++
+        
     }
     return Math.ceil(b)
 }
