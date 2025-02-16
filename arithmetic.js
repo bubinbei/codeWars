@@ -11,9 +11,27 @@
 // 5, 2, "multiply" --> 10
 // 5, 2, "divide"   --> 2.5
 
-export function arithmetic(a ,b ,c) {
-    if (c==="add") return a+b
-    if (c==="subtract") return a-b
-    if (c==="multiply") return a*b
-    return a/b
-}
+// export function arithmetic(a ,b ,c) {
+//     if (c==="add") return a+b
+//     if (c==="subtract") return a-b
+//     if (c==="multiply") return a*b
+//     return a/b
+// }
+
+// export const arithmetic = (a, b, operator) => ({
+//     'add'     : a + b,
+//     'subtract': a - b,
+//     'multiply': a * b,
+//     'divide'  : a / b
+// }[operator] ?? "Unknown operator"); // Если операция не найдена → вернёт сообщение
+
+export function arithmetic(a, b, operator){
+    return (ops[operator] ?? "Unknown operator") (a, b); // Если операция не найдена → вернёт сообщение
+  }
+  
+  const ops = {
+    "add"      : (a, b) => a + b,
+    "subtract" : (a, b) => a - b,
+    "multiply" : (a, b) => a * b,
+    "divide"   : (a, b) => a / b
+  }
