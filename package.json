@@ -4,13 +4,24 @@
   "description": "",
   "main": "index.js",
   "type": "module",
-
   "scripts": {
-    "test": "jest --watchAll"
+    "test": "jest --watch",
+    "test:quick": "jest --onlyChanged --coverage=false",
+    "test:coverage": "jest --coverage",
+    "test: -w -c -on": "jest --onlyChanged --coverage --watch"
   },
   "jest": {
-    "collectCoverage": true,
-    "coverageReporters": ["html"]
+    "testEnvironment": "node",                     
+    "testMatch": ["**/*.test.js"],                 
+    "transform": {                                
+      "^.+\\.js$": "babel-jest"
+    },
+    "cacheDirectory": "<rootDir>/.jest_cache",
+    "moduleDirectories": ["node_modules", "src"],   
+    "watchPathIgnorePatterns": ["node_modules"],
+    "coveragePathIgnorePatterns": ["node_modules"], 
+    "bail": 1,
+    "maxWorkers": "100%"                           
   },
   "keywords": [],
   "author": "",
