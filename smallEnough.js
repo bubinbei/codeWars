@@ -3,4 +3,4 @@
 // to the limit value. If they are, return true. 
 // Else, return false.
 
-const smallEnough = (a, limit) => !a.find(e=> e > limit)
+export const smallEnough = (a, limit) => !a.find(e=> e > limit)
