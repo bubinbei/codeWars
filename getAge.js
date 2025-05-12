@@ -1,0 +1,1 @@
+export const getAge=_=>+_[~~NaN]
